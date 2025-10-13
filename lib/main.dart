@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
+import 'package:quran_tracker/constants.dart';
+
+import 'quran_tracker_app.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -7,19 +10,7 @@ void main() async {
   await Hive.initFlutter();
   await Hive.openBox('quranBox');
 
-  runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: QuranTrackerPage(),
-    );
-  }
+  runApp(const QuranTrackerApp());
 }
 
 class QuranTrackerPage extends StatefulWidget {
@@ -30,123 +21,7 @@ class QuranTrackerPage extends StatefulWidget {
 }
 
 class _QuranTrackerPageState extends State<QuranTrackerPage> {
-  final List<String> surahNames = [
-    "الفاتحة",
-    "البقرة",
-    "آل عمران",
-    "النساء",
-    "المائدة",
-    "الأنعام",
-    "الأعراف",
-    "الأنفال",
-    "التوبة",
-    "يونس",
-    "هود",
-    "يوسف",
-    "الرعد",
-    "إبراهيم",
-    "الحجر",
-    "النحل",
-    "الإسراء",
-    "الكهف",
-    "مريم",
-    "طه",
-    "الأنبياء",
-    "الحج",
-    "المؤمنون",
-    "النور",
-    "الفرقان",
-    "الشعراء",
-    "النمل",
-    "القصص",
-    "العنكبوت",
-    "الروم",
-    "لقمان",
-    "السجدة",
-    "الأحزاب",
-    "سبأ",
-    "فاطر",
-    "يس",
-    "الصافات",
-    "ص",
-    "الزمر",
-    "غافر",
-    "فصلت",
-    "الشورى",
-    "الزخرف",
-    "الدخان",
-    "الجاثية",
-    "الأحقاف",
-    "محمد",
-    "الفتح",
-    "الحجرات",
-    "ق",
-    "الذاريات",
-    "الطور",
-    "النجم",
-    "القمر",
-    "الرحمن",
-    "الواقعة",
-    "الحديد",
-    "المجادلة",
-    "الحشر",
-    "الممتحنة",
-    "الصف",
-    "الجمعة",
-    "المنافقون",
-    "التغابن",
-    "الطلاق",
-    "التحريم",
-    "الملك",
-    "القلم",
-    "الحاقة",
-    "المعارج",
-    "نوح",
-    "الجن",
-    "المزمل",
-    "المدثر",
-    "القيامة",
-    "الإنسان",
-    "المرسلات",
-    "النبأ",
-    "النازعات",
-    "عبس",
-    "التكوير",
-    "الانفطار",
-    "المطففين",
-    "الانشقاق",
-    "البروج",
-    "الطارق",
-    "الأعلى",
-    "الغاشية",
-    "الفجر",
-    "البلد",
-    "الشمس",
-    "الليل",
-    "الضحى",
-    "الشرح",
-    "التين",
-    "العلق",
-    "القدر",
-    "البينة",
-    "الزلزلة",
-    "العاديات",
-    "القارعة",
-    "التكاثر",
-    "العصر",
-    "الهمزة",
-    "الفيل",
-    "قريش",
-    "الماعون",
-    "الكوثر",
-    "الكافرون",
-    "النصر",
-    "المسد",
-    "الإخلاص",
-    "الفلق",
-    "الناس",
-  ];
-
+  final List<String> surahNames = sNames;
   late Box box;
 
   @override
