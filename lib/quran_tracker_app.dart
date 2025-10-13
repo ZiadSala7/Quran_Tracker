@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:quran_tracker/main.dart';
+
+import 'views/home_view.dart';
 
 class QuranTrackerApp extends StatelessWidget {
   const QuranTrackerApp({super.key});
