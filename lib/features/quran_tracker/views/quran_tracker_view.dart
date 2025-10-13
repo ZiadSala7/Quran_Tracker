@@ -1,18 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
-import '../constants.dart';
-import 'widgets/home_view_appbar_body.dart';
-import 'widgets/home_view_body.dart';
+import '../../../constants.dart';
+import 'widgets/quran_tracker_view_appbar_body.dart';
+import 'widgets/quran_tracker_view_body.dart';
 
-class QuranTrackerPage extends StatefulWidget {
-  const QuranTrackerPage({super.key});
+class QuranTrackerView extends StatefulWidget {
+  static const String id = 'homeView';
+  const QuranTrackerView({super.key});
 
   @override
-  State<QuranTrackerPage> createState() => _QuranTrackerPageState();
+  State<QuranTrackerView> createState() => _QuranTrackerViewState();
 }
 
-class _QuranTrackerPageState extends State<QuranTrackerPage> {
+class _QuranTrackerViewState extends State<QuranTrackerView> {
   final List<String> surahNames = sNames;
   late Box box;
 
@@ -39,8 +40,8 @@ class _QuranTrackerPageState extends State<QuranTrackerPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: homeViewAppBar(),
-      body: HomeViewBody(box: box, surahNames: surahNames),
+      appBar: quranTrackerViewAppBar(),
+      body: QuranTrackerViewBody(box: box, surahNames: surahNames),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.red.shade700,
         onPressed: () {
@@ -55,7 +56,7 @@ class _QuranTrackerPageState extends State<QuranTrackerPage> {
     );
   }
 
-  AppBar homeViewAppBar() {
+  AppBar quranTrackerViewAppBar() {
     return AppBar(
       title: ValueListenableBuilder(
         valueListenable: box.listenable(),

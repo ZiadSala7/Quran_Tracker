@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
-class HomeViewBody extends StatelessWidget {
-  const HomeViewBody({super.key, required this.box, required this.surahNames});
+class QuranTrackerViewBody extends StatelessWidget {
+  const QuranTrackerViewBody({
+    super.key,
+    required this.box,
+    required this.surahNames,
+  });
 
   final Box box;
   final List<String> surahNames;

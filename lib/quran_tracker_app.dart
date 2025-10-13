@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'views/home_view.dart';
+import 'core/utils/app_routes.dart';
+import 'features/splash/views/splash_view.dart';
 
 class QuranTrackerApp extends StatelessWidget {
   const QuranTrackerApp({super.key});
@@ -8,8 +9,14 @@ class QuranTrackerApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      locale: Locale('ar'),
+      routes: appRoutes,
       debugShowCheckedModeBanner: false,
-      home: QuranTrackerPage(),
+      theme: ThemeData(
+        fontFamily: 'Haramatton',
+        scaffoldBackgroundColor: Colors.white,
+      ),
+      home: SplashView(),
     );
   }
 }
