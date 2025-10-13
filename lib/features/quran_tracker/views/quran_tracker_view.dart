@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
 import '../../../constants.dart';
+import 'widgets/quran_reset_button.dart';
 import 'widgets/quran_tracker_view_appbar_body.dart';
 import 'widgets/quran_tracker_view_body.dart';
 
@@ -42,17 +43,7 @@ class _QuranTrackerViewState extends State<QuranTrackerView> {
     return Scaffold(
       appBar: quranTrackerViewAppBar(),
       body: QuranTrackerViewBody(box: box, surahNames: surahNames),
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.red.shade700,
-        onPressed: () {
-          // إعادة التعيين
-          for (int i = 0; i < surahNames.length; i++) {
-            box.put(i.toString(), false);
-          }
-        },
-        tooltip: 'مسح جميع العلامات',
-        child: Icon(Icons.refresh),
-      ),
+      floatingActionButton: QuranResetButton(surahNames: surahNames, box: box),
     );
   }
 

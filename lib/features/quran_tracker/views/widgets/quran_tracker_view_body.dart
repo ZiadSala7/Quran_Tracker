@@ -24,7 +24,7 @@ class QuranTrackerViewBody extends StatelessWidget {
               title: Text(
                 surahNames[index],
                 style: const TextStyle(
-                  fontSize: 18,
+                  fontSize: 25,
                   fontWeight: FontWeight.bold,
                 ),
               ),
