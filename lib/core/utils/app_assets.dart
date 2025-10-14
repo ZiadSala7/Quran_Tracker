@@ -22,13 +22,17 @@ class AppAssets {
   /// assets/fonts/Harmattan-SemiBold.ttf
   static const String assetsFontsHarmattanSemiBold = "assets/fonts/Harmattan-SemiBold.ttf";
 
+  /// Assets for assetsIconApp
+  /// assets/iconApp.png
+  static const String assetsIconApp = "assets/iconApp.png";
+
   /// Assets for assetsLogo
   /// assets/logo.jpg
   static const String assetsLogo = "assets/logo.jpg";
 
   /// Assets for assetsLogo2
-  /// assets/logo2.jpg
-  static const String assetsLogo2 = "assets/logo2.jpg";
+  /// assets/logo2.png
+  static const String assetsLogo2 = "assets/logo2.png";
 
   /// Assets for assetsQuran
   /// assets/quran.png
