@@ -19,14 +19,13 @@ class HomeViewAppBarBody extends StatelessWidget {
       children: [
         const Text(
           'مسار الحافظ',
-          style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+          style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
         ),
         Text(
           'تم حفظ $completed / ${surahNames.length} (${(percent * 100).toStringAsFixed(1)}%)',
-          style: const TextStyle(fontSize: 14, color: Colors.white70),
+          style: const TextStyle(fontSize: 18, color: Colors.white),
         ),
         const SizedBox(height: 6),
-        // 🔹 شريط التقدم الأخضر
         LinearProgressIndicator(
           value: percent,
           color: Colors.lightGreenAccent,

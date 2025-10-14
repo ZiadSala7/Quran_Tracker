@@ -62,7 +62,7 @@ class _QuranTrackerViewState extends State<QuranTrackerView> {
         },
       ),
       centerTitle: true,
-      backgroundColor: Colors.green.shade700,
+      backgroundColor: Colors.green,
       toolbarHeight: 90,
     );
   }

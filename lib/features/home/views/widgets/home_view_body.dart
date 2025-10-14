@@ -1,27 +1,19 @@
 import 'package:flutter/material.dart';
-
-import '../../../quran_tracker/views/quran_tracker_view.dart';
+import '../../data/card_model.dart';
+import 'home_view_card.dart';
 
 class HomeViewBody extends StatelessWidget {
   const HomeViewBody({super.key});
 
   @override
   Widget build(BuildContext context) {
+    List<CardModel> cardModels = models(context);
     return Container(
       padding: EdgeInsets.symmetric(horizontal: 20, vertical: 30),
       child: GridView.builder(
-        itemCount: 8,
+        itemCount: cardModels.length,
         itemBuilder: (BuildContext context, int index) {
-          return GestureDetector(
-            onTap: () {
-              Navigator.of(context).pushNamed(QuranTrackerView.id);
-            },
-            child: Container(
-              height: 100,
-              width: 100,
-              color: Colors.amberAccent,
-            ),
-          );
+          return HomeViewCard(model: cardModels[index]);
         },
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
