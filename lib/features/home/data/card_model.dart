@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:quran_tracker/core/utils/app_assets.dart';
-import '../../counter/views/counter_view.dart';
 
+import '../../../core/utils/app_assets.dart';
+import '../../azkar/views/azkar_view.dart';
+import '../../counter/views/counter_view.dart';
 import '../../quran_tracker/views/quran_tracker_view.dart';
 
 class CardModel {
@@ -29,8 +30,10 @@ List<CardModel> models(BuildContext context) {
     ),
     CardModel(
       text: 'الأذكار',
-      image: AppAssets.assetsSlah,
-      onPressed: (context) {},
+      image: AppAssets.assetsAzkar,
+      onPressed: (context) {
+        Navigator.of(context).pushNamed(AzkarView.id);
+      },
     ),
   ];
 }
