@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
+import '../../../core/widgets/custom_appbar.dart';
 import 'widgets/counter_view_body.dart';
 
 class CounterView extends StatefulWidget {
@@ -35,11 +36,7 @@ class _CounterViewState extends State<CounterView> {
   Widget build(BuildContext context) {
     int counter = counterBox.get('count', defaultValue: 0)!;
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('المسبحة'),
-        centerTitle: true,
-        backgroundColor: Colors.green,
-      ),
+      appBar: customAppBar('المسبحة', false),
       body: CounterViewBody(
         counter: counter,
         cntIncrement: incrementCounter,

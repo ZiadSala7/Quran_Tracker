@@ -38,6 +38,10 @@ class AppAssets {
   /// assets/logo2.png
   static const String assetsLogo2 = "assets/logo2.png";
 
+  /// Assets for assetsNawawy
+  /// assets/nawawy.jpg
+  static const String assetsNawawy = "assets/nawawy.jpg";
+
   /// Assets for assetsQuran
   /// assets/quran.png
   static const String assetsQuran = "assets/quran.png";

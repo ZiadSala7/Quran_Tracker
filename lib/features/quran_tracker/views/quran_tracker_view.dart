@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
+import 'package:quran_tracker/core/utils/app_colors.dart';
 
 import '../../../constants.dart';
 import 'widgets/quran_reset_button.dart';
@@ -62,7 +63,7 @@ class _QuranTrackerViewState extends State<QuranTrackerView> {
         },
       ),
       centerTitle: true,
-      backgroundColor: Colors.green,
+      backgroundColor: AppColors.grey,
       toolbarHeight: 90,
     );
   }

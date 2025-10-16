@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quran_tracker/core/utils/app_colors.dart';
 import '../../data/card_model.dart';
 
 class HomeViewCard extends StatelessWidget {
@@ -15,7 +16,11 @@ class HomeViewCard extends StatelessWidget {
         padding: EdgeInsets.all(10),
         height: 100,
         width: 100,
-        decoration: BoxDecoration(color: Colors.lightGreenAccent),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(15),
+
+          color: AppColors.grey,
+        ),
         child: Column(
           children: [
             Flexible(child: Image.asset(model.image)),
