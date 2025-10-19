@@ -5,7 +5,6 @@ import 'islamic_app.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-
   await Hive.initFlutter();
   await Hive.openBox('quranBox');
   await Hive.openBox<int>('counterBox');

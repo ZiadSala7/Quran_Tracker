@@ -6,9 +6,29 @@ class AppAssets {
   /// assets/azkar.png
   static const String assetsAzkar = "assets/azkar.png";
 
+  /// Assets for assetsBooksFeqh
+  /// assets/books/feqh.pdf
+  static const String assetsBooksFeqh = "assets/books/feqh.pdf";
+
+  /// Assets for assetsBooksFourty
+  /// assets/books/fourty.pdf
+  static const String assetsBooksFourty = "assets/books/fourty.pdf";
+
+  /// Assets for assetsBooksOsolEman
+  /// assets/books/osolEman.pdf
+  static const String assetsBooksOsolEman = "assets/books/osolEman.pdf";
+
+  /// Assets for assetsBooksRaheeq
+  /// assets/books/raheeq.pdf
+  static const String assetsBooksRaheeq = "assets/books/raheeq.pdf";
+
   /// Assets for assetsCnt
   /// assets/cnt.png
   static const String assetsCnt = "assets/cnt.png";
+
+  /// Assets for assetsFeqh
+  /// assets/feqh.png
+  static const String assetsFeqh = "assets/feqh.png";
 
   /// Assets for assetsFontsHarmattanBold
   /// assets/fonts/Harmattan-Bold.ttf
@@ -58,6 +78,10 @@ class AppAssets {
   /// assets/nawm.jpg
   static const String assetsNawm = "assets/nawm.jpg";
 
+  /// Assets for assetsOsol
+  /// assets/osol.png
+  static const String assetsOsol = "assets/osol.png";
+
   /// Assets for assetsPray
   /// assets/pray.png
   static const String assetsPray = "assets/pray.png";
@@ -65,6 +89,10 @@ class AppAssets {
   /// Assets for assetsQuran
   /// assets/quran.png
   static const String assetsQuran = "assets/quran.png";
+
+  /// Assets for assetsRaheeq
+  /// assets/raheeq.jpg
+  static const String assetsRaheeq = "assets/raheeq.jpg";
 
   /// Assets for assetsSabahLogo
   /// assets/sabahLogo.jpg

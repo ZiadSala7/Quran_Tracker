@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../books/views/books_view.dart';
 import '../../../core/utils/app_assets.dart';
 import '../../azkar/views/azkar_view.dart';
 import '../../counter/views/counter_view.dart';
@@ -39,7 +40,7 @@ List<CardModel> models(BuildContext context) {
       text: 'المكتبة',
       image: AppAssets.assetsMyLib,
       onPressed: (context) {
-        // Navigator.of(context).pushNamed(AzkarView.id);
+        Navigator.of(context).pushNamed(BooksView.id);
       },
     ),
   ];
