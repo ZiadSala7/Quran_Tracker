@@ -35,11 +35,11 @@ List<CardModel> models(BuildContext context) {
         Navigator.of(context).pushNamed(AzkarView.id);
       },
     ),
-     CardModel(
-      text: 'الأربعون النووية',
-      image: AppAssets.assetsNawawy,
+    CardModel(
+      text: 'المكتبة',
+      image: AppAssets.assetsMyLib,
       onPressed: (context) {
-        Navigator.of(context).pushNamed(AzkarView.id);
+        // Navigator.of(context).pushNamed(AzkarView.id);
       },
     ),
   ];

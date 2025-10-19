@@ -6,22 +6,6 @@ class AppAssets {
   /// assets/azkar.png
   static const String assetsAzkar = "assets/azkar.png";
 
-  /// Assets for assetsAzkarMasaa
-  /// assets/azkarMasaa.jpg
-  static const String assetsAzkarMasaa = "assets/azkarMasaa.jpg";
-
-  /// Assets for assetsAzkarSabah
-  /// assets/azkarSabah.jpg
-  static const String assetsAzkarSabah = "assets/azkarSabah.jpg";
-
-  /// Assets for assetsAzkarSalah
-  /// assets/azkarSalah.jpg
-  static const String assetsAzkarSalah = "assets/azkarSalah.jpg";
-
-  /// Assets for assetsAzkarSleep
-  /// assets/azkarSleep.jpg
-  static const String assetsAzkarSleep = "assets/azkarSleep.jpg";
-
   /// Assets for assetsCnt
   /// assets/cnt.png
   static const String assetsCnt = "assets/cnt.png";
@@ -54,21 +38,29 @@ class AppAssets {
   /// assets/logo2.png
   static const String assetsLogo2 = "assets/logo2.png";
 
-  /// Assets for assetsMasaaLogo2
-  /// assets/masaaLogo2.jpeg
-  static const String assetsMasaaLogo2 = "assets/masaaLogo2.jpeg";
-
   /// Assets for assetsMasaaLogo2Rmv
   /// assets/masaaLogo2Rmv.png
   static const String assetsMasaaLogo2Rmv = "assets/masaaLogo2Rmv.png";
+
+  /// Assets for assetsMoon
+  /// assets/moon.png
+  static const String assetsMoon = "assets/moon.png";
+
+  /// Assets for assetsMyLib
+  /// assets/myLib.png
+  static const String assetsMyLib = "assets/myLib.png";
 
   /// Assets for assetsNawawy
   /// assets/nawawy.jpg
   static const String assetsNawawy = "assets/nawawy.jpg";
 
-  /// Assets for assetsNawmLogo
-  /// assets/nawmLogo.jfif
-  static const String assetsNawmLogo = "assets/nawmLogo.jfif";
+  /// Assets for assetsNawm
+  /// assets/nawm.jpg
+  static const String assetsNawm = "assets/nawm.jpg";
+
+  /// Assets for assetsPray
+  /// assets/pray.png
+  static const String assetsPray = "assets/pray.png";
 
   /// Assets for assetsQuran
   /// assets/quran.png
@@ -78,10 +70,6 @@ class AppAssets {
   /// assets/sabahLogo.jpg
   static const String assetsSabahLogo = "assets/sabahLogo.jpg";
 
-  /// Assets for assetsSabahLogo2
-  /// assets/sabahLogo2.png
-  static const String assetsSabahLogo2 = "assets/sabahLogo2.png";
-
   /// Assets for assetsSalah
   /// assets/salah.jpg
   static const String assetsSalah = "assets/salah.jpg";
@@ -89,5 +77,13 @@ class AppAssets {
   /// Assets for assetsSlah
   /// assets/slah.png
   static const String assetsSlah = "assets/slah.png";
+
+  /// Assets for assetsSleep
+  /// assets/sleep.png
+  static const String assetsSleep = "assets/sleep.png";
+
+  /// Assets for assetsSun
+  /// assets/sun.png
+  static const String assetsSun = "assets/sun.png";
 }
 

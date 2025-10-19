@@ -27,7 +27,7 @@ class CounterViewBody extends StatelessWidget {
                   height: MediaQuery.sizeOf(context).height / 2,
                 ),
                 Positioned(
-                  top: constraints.maxWidth * 0.18,
+                  top: constraints.maxWidth * 0.2,
                   left: constraints.maxWidth * 0.18,
                   child: Text(
                     '$counter',

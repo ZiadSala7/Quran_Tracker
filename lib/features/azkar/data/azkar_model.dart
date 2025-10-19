@@ -10,22 +10,22 @@ class AzkarModel {
 
 List<AzkarModel> azkarModels = [
   AzkarModel(
-    logo: AppAssets.assetsSabahLogo,
+    logo: AppAssets.assetsSun,
     azkarList: azkarElsabah,
     name: 'أذكار الصباح',
   ),
   AzkarModel(
-    logo: AppAssets.assetsMasaaLogo2Rmv,
+    logo: AppAssets.assetsMoon,
     azkarList: azkarElmasaa,
     name: 'أذكار المساء',
   ),
   AzkarModel(
-    logo: AppAssets.assetsSlah,
+    logo: AppAssets.assetsPray,
     azkarList: azkarBaadElsalah,
     name: 'أذكار بعد الصلاة',
   ),
   AzkarModel(
-    logo: AppAssets.assetsNawmLogo,
+    logo: AppAssets.assetsSleep,
     azkarList: azkarElnawm,
     name: 'أذكار قبل النوم',
   ),

@@ -10,26 +10,28 @@ class AzkarViewCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () {
-        Navigator.of(context).push(
-          MaterialPageRoute(
-            builder: (context) => AzkarDisplayView(
-              azkarList: model.azkarList,
-              appBarTitle: model.name,
-            ),
-          ),
-        );
-      },
-      child: Container(
-        padding: EdgeInsets.all(5),
-        height: 100,
-        width: 100,
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(15),
-          color: AppColors.grey,
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 15),
+      child: ElevatedButton.icon(
+        style: ElevatedButton.styleFrom(
+          backgroundColor: AppColors.azkarCard,
+          padding: EdgeInsets.all(15),
         ),
-        child: Image.asset(model.logo, fit: BoxFit.fill),
+        onPressed: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (context) => AzkarDisplayView(
+                azkarList: model.azkarList,
+                appBarTitle: model.name,
+              ),
+            ),
+          );
+        },
+        icon: Text(
+          model.name,
+          style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+        ),
+        label: Image.asset(model.logo, height: 30),
       ),
     );
   }

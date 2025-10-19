@@ -9,14 +9,19 @@ class DisplayAzkarCard extends StatefulWidget {
   State<DisplayAzkarCard> createState() => _DisplayAzkarCardState();
 }
 
-class _DisplayAzkarCardState extends State<DisplayAzkarCard> {
+class _DisplayAzkarCardState extends State<DisplayAzkarCard>
+    with AutomaticKeepAliveClientMixin {
   bool isActive = false;
+
+  // 👇 the core of AutomaticKeepAlicveClientMixin
+  @override
+  bool get wantKeepAlive => true;
+
   @override
   Widget build(BuildContext context) {
+    super.build(context); // you must write this line in keepAlive
     return Card(
-      color: isActive
-          ? AppColors.green
-          : const Color.fromARGB(175, 255, 255, 255),
+      color: isActive ? AppColors.green : AppColors.azkarCard,
       child: Padding(
         padding: const EdgeInsets.all(15.0),
         child: Column(
@@ -28,7 +33,7 @@ class _DisplayAzkarCardState extends State<DisplayAzkarCard> {
               style: TextStyle(
                 fontSize: 22,
                 fontWeight: FontWeight.bold,
-                color: isActive ? Colors.black : AppColors.grey,
+                color: isActive ? Colors.black : Colors.deepPurple,
               ),
             ),
             Align(

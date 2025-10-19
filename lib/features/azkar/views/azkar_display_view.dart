@@ -18,19 +18,12 @@ class AzkarDisplayView extends StatelessWidget {
     return Scaffold(
       appBar: customAppBar(appBarTitle, false),
       body: SafeArea(
-        child: Container(
-          padding: EdgeInsets.symmetric(horizontal: 20, vertical: 30),
-          child: GridView.builder(
-            itemCount: azkarList.length,
-            itemBuilder: (BuildContext context, int index) {
+        child: Padding(
+          padding: const EdgeInsets.all(15),
+          child: ListView(
+            children: List.generate(azkarList.length, (index) {
               return DisplayAzkarCard(text: azkarList[index]);
-            },
-            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 1,
-              mainAxisSpacing: 10,
-              crossAxisSpacing: 10,
-              childAspectRatio: 1,
-            ),
+            }).toList(),
           ),
         ),
       ),

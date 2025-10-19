@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import '../../../../core/utils/app_assets.dart';
 import '../../../home/views/home_view.dart';
 
 class SplashViewBody extends StatefulWidget {
@@ -25,7 +26,7 @@ class _SplashViewBodyState extends State<SplashViewBody> {
       crossAxisAlignment: CrossAxisAlignment.stretch,
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Image.asset('assets/logo.jpg'),
+        Image.asset(AppAssets.assetsLogo2),
         Text(
           'وَذَكِّرْ فَإِنَّ الذِّكْرَىٰ تَنفَعُ الْمُؤْمِنِينَ',
           textAlign: TextAlign.center,
