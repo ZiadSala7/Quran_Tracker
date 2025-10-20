@@ -14,12 +14,6 @@ class AzkarViewBody extends StatelessWidget {
         itemBuilder: (BuildContext context, int index) {
           return AzkarViewCard(model: azkarModels[index]);
         },
-        // gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-        //   crossAxisCount: 1,
-        //   mainAxisSpacing: 10,
-        //   childAspectRatio: 2.3,
-        //   crossAxisSpacing: 10,
-        // ),
       ),
     );
   }

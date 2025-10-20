@@ -50,17 +50,9 @@ class AppAssets {
   /// assets/iconApp.png
   static const String assetsIconApp = "assets/iconApp.png";
 
-  /// Assets for assetsLogo
-  /// assets/logo.jpg
-  static const String assetsLogo = "assets/logo.jpg";
-
   /// Assets for assetsLogo2
   /// assets/logo2.png
   static const String assetsLogo2 = "assets/logo2.png";
-
-  /// Assets for assetsMasaaLogo2Rmv
-  /// assets/masaaLogo2Rmv.png
-  static const String assetsMasaaLogo2Rmv = "assets/masaaLogo2Rmv.png";
 
   /// Assets for assetsMoon
   /// assets/moon.png
@@ -73,10 +65,6 @@ class AppAssets {
   /// Assets for assetsNawawy
   /// assets/nawawy.jpg
   static const String assetsNawawy = "assets/nawawy.jpg";
-
-  /// Assets for assetsNawm
-  /// assets/nawm.jpg
-  static const String assetsNawm = "assets/nawm.jpg";
 
   /// Assets for assetsOsol
   /// assets/osol.png
@@ -93,18 +81,6 @@ class AppAssets {
   /// Assets for assetsRaheeq
   /// assets/raheeq.jpg
   static const String assetsRaheeq = "assets/raheeq.jpg";
-
-  /// Assets for assetsSabahLogo
-  /// assets/sabahLogo.jpg
-  static const String assetsSabahLogo = "assets/sabahLogo.jpg";
-
-  /// Assets for assetsSalah
-  /// assets/salah.jpg
-  static const String assetsSalah = "assets/salah.jpg";
-
-  /// Assets for assetsSlah
-  /// assets/slah.png
-  static const String assetsSlah = "assets/slah.png";
 
   /// Assets for assetsSleep
   /// assets/sleep.png
